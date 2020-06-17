@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Krakitan</title>
+</head>
+<link rel="stylesheet" href="/assets/styles.css">
+
+<body>
+
+
+    <header>
+        <h1 id="top" class="judul">HITUNG BANGUN RUANG</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">&#9751; Home</a></li>
+                <li><a href="#deskripsi">Deskripsi</a></li>
+                <li><a href="#persegi">Persegi</a></li>
+                <li><a href="#persegiPanjang">Persegi Panjang</a></li>
+                <li><a href="#jajarGenjang">Jajar Genjang</a></li>
+                <li><a href="#trapesium">Trapesium</a></li>
+                <li><a href="#belahKetupat">Belah Ketupat</a></li>
+                <li><a href="#segitiga">Segitiga</a></li>
+                <li><a href="#lingkaran">Lingkaran</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="deskripsi" class="card">
+                <h2>
+                    Deskripsi
+                </h2>
+                <p>
+                    Bangun datar merupakan sebutan untuk bangun-bangun dua dimensi. Bangun datar merupakan sebuah bidang
+                    datar yang dibatasi oleh garis lurus ataupun garis lengkung. Bangun datar yang
+                    pelajari di sini yakni perhitungan luas bangun datar diantaranya Persegi, Persegi Panjang, Jajar
+                    Genjang,
+                    Trapesium, Belah Ketupat,
+                    Segitiga, da Lingkaran. Perlu diketahui pemahaman mengenai
+                    bangun datar sangat penting kaitannya dalam menghitung volume sebuah bangun ruang. Macam macam
+                    bangun ruang antara lain; kubus, balok, prisma, limas, tabung, kerucut dan bola.
+                </p>
+            </article>
+            <article id="persegi" class="card">
+                <h2>PERSEGI</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/persegi.png" alt="Persegi" style="width: 150px;">
+                                <figcaption>Gb.1 Persegi</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Persegi : s<sup>2</sup>
+                            </strong>
+                            <br>
+                            <input type="text" id="sisiPersegi" placeholder="Sisi Persegi">
+                            <button type="submit" id="hitungPersegi" class="submit" onclick="luasPersegi();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetPersegi" class="reset" onclick="resetPersegi();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasPersegi" placeholder="Luas Persegi" readonly>
+
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article id="persegiPanjang" class="card">
+                <h2>PERSEGI PANJANG</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/persegi_panjang.jpeg" alt="Persegi Panjang" style="width: 150px;">
+                                <figcaption>Gb.2 Persegi Panjang</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Persegi Panjang : p x l
+                            </strong>
+                            <br>
+                            <input type="text" id="panjangPersegiPanjang" placeholder="Panjang Persegi Panjang">
+                            <br>
+                            <input type="text" id="lebarPersegiPanjang" placeholder="Lebar Persegi Panjang">
+                            <button type="submit" id="hitungPersegiPanjang" class="submit"
+                                onclick="luasPersegiPanjang();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetPersegiPanjang" class="reset"
+                                onclick="resetPersegiPanjang();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasPersegiPanjang" placeholder="Luas Persegi Panjang" readonly>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article id="jajarGenjang" class="card">
+                <h2>JAJAR GENJANG</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/jajar_genjang.png" alt="Jajar Genjang" style="width: 150px;">
+                                <figcaption>Gb.3 Jajar Genjang</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Jajar Genjang : a x t
+                            </strong>
+                            <br>
+                            <input type="text" id="alasJajarGenjang" placeholder="Alas Jajar Genjang">
+                            <br>
+                            <input type="text" id="tinggiJajarGenjang" placeholder="Tinggi Jajar Genjang">
+                            <button type="submit" id="hitungJajarGenjang" class="submit" onclick="luasJajarGenjang();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetJajarGenjang" class="reset" onclick="resetJajarGenjang();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasJajarGenjang" placeholder="Luas Jajar Genjang" readonly>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article id="trapesium" class="card">
+                <h2>TRAPESIUM</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/trapesium.jpeg" alt="Trapesium" style="width: 150px;">
+                                <figcaption>Gb.4 Trapesium</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Trapesium : &frac12; x (a + c) x t
+                            </strong>
+                            <br>
+                            <input type="text" id="sisiATrapesium" placeholder="Panjang Sisi a Trapesium">
+                            <br>
+                            <input type="text" id="sisiCTrapesium" placeholder="Panjang Sisi c Trapesium">
+                            <br>
+                            <input type="text" id="tinggiTrapesium" placeholder="Tinggi Trapesium">
+                            <button type="submit" id="hitungTrapesium" class="submit" onclick="luasTrapesium();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetTrapesium" class="reset" onclick="resetTrapesium();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasTrapesium" placeholder="Luas Trapesium" readonly>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article id="belahKetupat" class="card">
+                <h2>BELAH KETUPAT</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/belah_ketupat.jpeg" alt="Belah Ketupat" style="width: 150px;">
+                                <figcaption>Gb.5 Belah Ketupat</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Belah Ketupat : &frac12; x d1 x d2
+                            </strong>
+                            <br>
+                            <input type="text" id="d1BelahKetupat" placeholder="Panjang d1">
+                            <br>
+                            <input type="text" id="d2BelahKetupat" placeholder="Panjang d2">
+                            <button type="submit" id="hitungBelahKetupat" class="submit" onclick="luasBelahKetupat();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetBelahKetupat" class="reset" onclick="resetBelahKetupat();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasBelahKetupat" placeholder="Luas Belah Ketupat" readonly>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article id="segitiga" class="card">
+                <h2>SEGITIGA</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/segitiga.png" alt="Segitiga" style="width: 150px;">
+                                <figcaption>Gb.6 Segitiga</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Segitiga : &frac12; x a x t
+                            </strong>
+                            <br>
+                            <input type="text" id="alasSegitiga" placeholder="Alas Segitiga">
+                            <br>
+                            <input type="text" id="tinggiSegitiga" placeholder="Tinggi Segitiga">
+                            <button type="submit" id="hitungSegitiga" class="submit" onclick="luasSegitiga();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetSegitiga" class="reset" onclick="resetSegitiga();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasSegitiga" placeholder="Luas Segitiga" readonly>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article id="lingkaran" class="card">
+                <h2>LINGKARAN</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="/images/lingkaran.png" alt="Lingkaran" style="width: 150px;">
+                                <figcaption>Gb.7 Lingkaran</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <strong>
+                                Luas Lingkaran : &pi;r<sup>2</sup>
+                            </strong>
+                            <br>
+                            <input type="text" id="jariLingkaran" placeholder="Jari - jari Lingkaran">
+                            <button type="submit" id="hitungLingkaran" class="submit" onclick="luasLingkaran();">
+                                Hitung
+                            </button>
+                            <button type="reset" id="resetLingkaran" class="reset" onclick="resetLingkaran();">
+                                Reset
+                            </button>
+                            <input type="text" id="luasLingkaran" placeholder="Luas Lingkaran" readonly>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <aside>
+            <article id="tentang" class="card">
+                <h2>
+                    About Author
+                </h2>
+                <figure>
+                    <img src="/images/profile.jpg" alt="">
+                </figure>
+                <table id="bio">
+                    <tr>
+                        <th>Nama</th>
+                        <td>RACHMAN SALISTIANTO</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Jl. Utan Panjang II RT 12 RW 10, Utan Panjang, Kemayoran, Jakarta Pusat, DKI Jakarta 10650
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Kelahiran</th>
+                        <td>Jakarta, 24 Juni 1999</td>
+                    </tr>
+                    <tr>
+                        <th>Kelamin</th>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <th>Agama</th>
+                        <td>ISLAM</td>
+                    </tr>
+                    <tr>
+                        <th>Kontak</th>
+                        <td>0858-7582-9588</td>
+                    </tr>
+                </table>
+            </article>
+        </aside>
+    </main>
+
+    <div id="backTop">
+        <a href="#top">^</a>
+    </div>
+
+    <footer>
+        <h2>COPYRIGHT &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            RACHMAN SALISTIANTO. ALL RIGHT RESERVED.
+        </h2>
+    </footer>
+
+    <script src="/assets/math.js"></script>
+</body>
+
+</html>
